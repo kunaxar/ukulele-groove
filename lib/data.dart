@@ -11,7 +11,7 @@ const patterns = [
     "name": "Down-up flow",
     "meter": 4,
     "steps": ["D", "U", "D", "U", "D", "U", "D", "U"],
-    "tip": "Fill all eight slots. Upstrokes fall between the beats, not on the numbers.",
+    "tip": "Fill all eight slots. In this beginner pattern, strum down on the numbers and up on the “ands”.",
   },
   {
     "id": "island",
@@ -93,3 +93,8 @@ const lessons = [
     "rest": "Skip the “and” after 1 and the downstroke on 3. X on 2 and 4 is a muted hit, not an empty slot.",
   },
 ];
+
+// Timing and stroke direction are independent in the free rhythm lab.
+const labStrokeCycle = ['D', 'U', 'X', '-'];
+String nextLabStroke(String current) =>
+    labStrokeCycle[(labStrokeCycle.indexOf(current) + 1) % labStrokeCycle.length];
