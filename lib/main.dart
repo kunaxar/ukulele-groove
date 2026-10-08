@@ -130,10 +130,7 @@ class _PracticeState extends State<Practice> {
                         onPressed: () {
                           stop();
                           setState(() {
-                            final cycle = i.isEven
-                                ? ['D', 'X', '-']
-                                : ['U', 'X', '-'];
-                            custom[i] = cycle[(cycle.indexOf(s) + 1) % 3];
+                            custom[i] = nextLabStroke(s);
                           });
                         },
                         child: Text(
@@ -346,7 +343,7 @@ class _PracticeState extends State<Practice> {
                         ),
                         text('3. Listen between beats. ${lesson['hear']}'),
                         text(
-                          '4. Try, then simplify. Move down on numbers, up on “ands”. Skip strokes when a busy strum crowds the melody. There is no compulsory pattern.',
+                          '4. Try, then simplify. A beginner default is down on numbers, up on “ands”. That is a starting point, not a rule. Skip strokes when a busy strum crowds the melody.',
                         ),
                       ],
                     ]),
@@ -358,7 +355,10 @@ class _PracticeState extends State<Practice> {
                       if (lab) ...[
                         const SizedBox(height: 14),
                         text(
-                          'Tap a slot: stroke → mute → skip. Four bars of a C chord.',
+                          'Tap any slot: down → up → mute → skip. Four bars of a C chord.',
+                        ),
+                        text(
+                          'Numbers and “ands” mark timing, not a required direction. Try up-down, down-down or up-up too. Keep a steady count; repeated directions need a silent return movement. × is a muted hit, while a dot is silent.',
                         ),
                         grid(custom, editable: true),
                         const SizedBox(height: 16),
