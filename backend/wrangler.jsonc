@@ -1,0 +1,27 @@
+{
+  "name": "uke-converter-test",
+  "main": "index.js",
+  "compatibility_date": "2026-10-08",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "account_id": "612b0aa7333ee10a3df4d136b0ab2498",
+  "browser": {
+    "binding": "BROWSER"
+  },
+  "workers_dev": true,
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "QUOTA",
+        "class_name": "QuotaGate"
+      }
+    ]
+  },
+  "exports": {
+    "QuotaGate": {
+      "type": "durable-object",
+      "storage": "sqlite"
+    }
+  }
+}

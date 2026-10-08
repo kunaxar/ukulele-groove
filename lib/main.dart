@@ -4,6 +4,7 @@ import 'dart:js_interop';
 import 'package:flutter/material.dart';
 
 import 'data.dart';
+import 'song_library.dart';
 
 @JS('playUke')
 external JSPromise<JSBoolean> playUke(JSString key, JSBoolean slow);
@@ -58,7 +59,10 @@ class _PracticeState extends State<Practice> {
   Future<void> play(String mode) async {
     stop();
     setState(() => error = '');
-    final ok = (await playUke('${lesson['id']}-$mode'.toJS, slow.toJS).toDart).toDart;
+    final ok = (await playUke(
+      '${lesson['id']}-$mode'.toJS,
+      slow.toJS,
+    ).toDart).toDart;
     if (!mounted) return;
     setState(() {
       playing = ok ? mode : '';
@@ -172,10 +176,12 @@ class _PracticeState extends State<Practice> {
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 28),
           child: Center(
             child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 760),
+              constraints: const BoxConstraints(maxWidth: 1120),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  const SongLibrary(),
+                  const SizedBox(height: 24),
                   const Text(
                     'UKULELE GROOVE',
                     style: TextStyle(

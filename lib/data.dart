@@ -97,4 +97,5 @@ const lessons = [
 // Timing and stroke direction are independent in the free rhythm lab.
 const labStrokeCycle = ['D', 'U', 'X', '-'];
 String nextLabStroke(String current) =>
-    labStrokeCycle[(labStrokeCycle.indexOf(current) + 1) % labStrokeCycle.length];
+    labStrokeCycle[(labStrokeCycle.indexOf(current) + 1) %
+        labStrokeCycle.length];
