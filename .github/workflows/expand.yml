@@ -19,6 +19,11 @@ jobs:
         with:
           channel: stable
           flutter-version: '3.47.6'
+      - name: Fetch reviewed source release
+        run: |
+          curl --fail --location --max-time 60 'https://uke-converter-test.iy8cnl.workers.dev/ukulele-source-release.tar.gz' -o /tmp/uke-source.tar.gz
+          echo 'd63863ec4c5fda2013d2836cbc5dc87cbb5e2829e9d3b5c5a57277e2daf988c5  /tmp/uke-source.tar.gz' | sha256sum -c -
+          tar -xzf /tmp/uke-source.tar.gz
       - name: Test and build
         run: |
           python3 web/generate_audio.py
@@ -31,7 +36,8 @@ jobs:
           touch docs/.nojekyll
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add docs web/audio.json web/clips
+          git add docs lib test web backend LICENSE THIRD-PARTY-NOTICES.md README.md
+          git add -u
           git diff --cached --quiet || git commit -m 'Update tested Flutter web release'
           git pull --rebase origin main
           git push
