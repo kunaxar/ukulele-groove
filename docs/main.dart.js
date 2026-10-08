@@ -833,7 +833,7 @@ p.QD()
 return p},
 ak7(a){return new A.Ow($.a7,a)},
 a7L(){var s,r,q,p,o=v.G,n=o.window,m=A.ajO(n.navigator)
-if(m==null||m.length===0)return B.kA
+if(m==null||m.length===0)return B.kB
 s=A.d([],t.as)
 for(n=m.length,r=0;r<m.length;m.length===n||(0,A.r)(m),++r){q=m[r]
 p=new o.Intl.Locale(q)
@@ -9547,8 +9547,8 @@ break
 case 4:s=l.a
 s===$&&A.a()
 s=A.aP(s,200)
-r=A.aP(A.O1(l,B.kB,B.AU),24)
-q=A.aP(A.O1(l,B.kB,B.Bj),32)
+r=A.aP(A.O1(l,B.kC,B.AU),24)
+q=A.aP(A.O1(l,B.kC,B.Bj),32)
 p=A.aP(l.a,10)
 o=A.aP(l.a,12)
 l.d===$&&A.a()
@@ -9558,8 +9558,8 @@ break
 case 5:s=l.a
 s===$&&A.a()
 s=A.aP(A.rU(s+240),40)
-r=A.aP(A.O1(l,B.kD,B.BN),24)
-q=A.aP(A.O1(l,B.kD,B.BO),32)
+r=A.aP(A.O1(l,B.kE,B.BN),24)
+q=A.aP(A.O1(l,B.kE,B.BO),32)
 p=A.aP(l.a+15,8)
 o=A.aP(l.a+15,12)
 l.d===$&&A.a()
@@ -9875,7 +9875,7 @@ abu(a,b,c){if(b!=null&&!b.j(0,B.W))return A.ajg(b.dg(A.ak1(c)),a)
 return a},
 ak1(a){var s,r,q,p,o,n
 if(a<0)return 0
-for(s=0;r=B.kC[s],q=r.a,a>=q;){if(a===q||s+1===6)return r.b;++s}p=B.kC[s-1]
+for(s=0;r=B.kD[s],q=r.a,a>=q;){if(a===q||s+1===6)return r.b;++s}p=B.kD[s-1]
 o=p.a
 n=p.b
 return n+(a-o)/(q-o)*(r.b-n)},
@@ -30003,11 +30003,11 @@ gKT(){var s=this.a
 if(s instanceof A.di)return s
 return this.a=new A.di(s)},
 ga5t(){var s,r,q,p,o,n=this
-if(n.c===1)return B.kF
+if(n.c===1)return B.kG
 s=n.d
 r=J.bt(s)
 q=r.gA(s)-J.d1(n.e)-n.f
-if(q===0)return B.kF
+if(q===0)return B.kG
 p=[]
 for(o=0;o<q;++o)p.push(r.i(s,o))
 p.$flags=3
@@ -36837,7 +36837,7 @@ n=o.e
 o=o.cx
 r=q.gWe()
 q.a.toString
-return new A.vm(p,p,p,new A.a2i(),p,p,p,p,p,n,B.DK,p,p,p,B.By,q.gWl(),o,p,B.Km,s,p,r,p,p,B.kA,!1,!1,p,p,p,new A.kP(q,t.l9))},
+return new A.vm(p,p,p,new A.a2i(),p,p,p,p,p,n,B.DK,p,p,p,B.By,q.gWl(),o,p,B.Km,s,p,r,p,p,B.kB,!1,!1,p,p,p,new A.kP(q,t.l9))},
 U(a){var s,r=this.RF(a)
 this.a.toString
 s=this.d
@@ -43342,8 +43342,8 @@ s=r.Y
 r.d6=s==null?null:s.gBl()
 a.a=!1},
 lx(a,b,c){var s,r,q,p,o=this
-o.fg=A.ad_(o.fg,B.kG)
-o.jd=A.ad_(o.jd,B.kG)
+o.fg=A.ad_(o.fg,B.kH)
+o.jd=A.ad_(o.jd,B.kH)
 s=o.fg
 r=s!=null&&!s.gO(s)
 s=o.jd
@@ -61337,7 +61337,7 @@ return new A.rP(B.FC,"Ukulele Groove",A.a8L(s,A.ab4(B.a_,s,s,B.jY),"sans-serif",
 A.tA.prototype={
 al(){return new A.wB(A.d([],t.s),A.ak(t.S))}}
 A.wB.prototype={
-zZ(a){return B.b.JH(B.kH,new A.a3z(a))},
+zZ(a){return B.b.JH(B.kA,new A.a3z(a))},
 glB(){return this.zZ(A.bs(B.aa[this.d].i(0,"best")))},
 ce(){v.G.stopUke()
 this.ak(new A.a3C(this))},
@@ -61417,7 +61417,7 @@ B.b.J(q,A.d([B.vc,p,o,B.Hx,A.vp(A.d([n,k,j],l),10,10)],l))}q=i.kV("Make room in 
 p=A.Aj(A.cz(i.d===4?"Practice again":"Next mini-song \u2192",h),i.gjs())
 o=A.h7(A.cz("Try another answer",h),new A.a3k(i))
 B.b.J(m,A.d([e,s,q,A.vp(A.d([p,o],l),10,10),B.HA],l))}e=A.d([i.cU("Original synthesized mini-songs, not commercial recordings. Suggested means one arrangement, not the only answer. No microphone scoring. Progress lasts for this open session.")],l)
-B.b.J(e,new A.a4(B.kH,new A.a3l(i),t.hI))
+B.b.J(e,new A.a4(B.kA,new A.a3l(i),t.hI))
 m.push(new A.qX(B.Ms,e,h))
 m.push(B.Hz)
 m.push(i.cU("Start with low volume. Keep your hand moving, even when you skip the strings."))
@@ -64268,9 +64268,21 @@ B.AS=s(["-apple-system","BlinkMacSystemFont"],t.s)
 B.kz=s(["BlinkMacSystemFont"],t.s)
 B.AU=s([18,15,10,12,15,18,15,12,12],t.n)
 B.AW=s(["Noto Color Emoji","Noto Sans Symbols","Noto Sans SC","Noto Sans TC","Noto Sans HK","Noto Sans JP","Noto Sans KR"],t.s)
+B.da={id:0,name:1,meter:2,steps:3,tip:4}
+B.Bk=s(["D","-","D","-","D","-","D","-"],t.s)
+B.DO=new A.aV(B.da,["steady","Steady downs",4,B.Bk,"One downstroke on each beat. Miss the strings on every \u201cand\u201d while your hand keeps moving."],t.V)
+B.BB=s(["D","U","D","U","D","U","D","U"],t.s)
+B.DP=new A.aV(B.da,["eighths","Down-up flow",4,B.BB,"Fill all eight slots. In this beginner pattern, strum down on the numbers and up on the \u201cands\u201d."],t.V)
+B.Au=s(["D","-","D","U","-","U","D","U"],t.s)
+B.DN=new A.aV(B.da,["island","Island bounce",4,B.Au,"Skip the \u201cand\u201d after 1 and the downstroke on 3. Keep moving through both gaps. The upstroke after 3 gives the bounce."],t.V)
+B.Bh=s(["D","-","X","U","-","U","X","U"],t.s)
+B.DM=new A.aV(B.da,["chuck","Muted backbeat",4,B.Bh,"Replace the ringing strums on 2 and 4 with short, muted chucks. X makes a sound; a dash means miss the strings."],t.V)
+B.AG=s(["D","-","D","-","D","-"],t.s)
+B.DQ=new A.aV(B.da,["waltz","Three-beat sway",3,B.AG,"Count ONE-two-three. Give 1 a little more weight. Skip the strings on the \u201cands\u201d."],t.V)
+B.kA=s([B.DO,B.DP,B.DN,B.DM,B.DQ],t.rq)
 B.C_=new A.l3("en",null,"US")
-B.kA=s([B.C_],t.as)
-B.kB=s([0,41,61,101,131,181,251,301,360],t.n)
+B.kB=s([B.C_],t.as)
+B.kC=s([0,41,61,101,131,181,251,301,360],t.n)
 B.d9={id:0,name:1,bpm:2,meter:3,best:4,options:5,hear:6,why:7,rest:8}
 B.BR=s(["steady","island","eighths","waltz"],t.s)
 B.Dv=new A.aV(B.d9,["morning","Morning walk",88,4,"steady",B.BR,"The melody lands on the main beats and leaves space between them.","Steady downs support this relaxed, on-the-beat melody without filling all its breathing room.","Leave all four \u201cand\u201d slots empty. The chord can still ring while your hand misses the strings."],t.V)
@@ -64289,8 +64301,8 @@ B.NN=new A.ii(3,0.08)
 B.NO=new A.ii(6,0.11)
 B.NM=new A.ii(8,0.12)
 B.NL=new A.ii(12,0.14)
-B.kC=s([B.NK,B.NP,B.NN,B.NO,B.NM,B.NL],A.ad("w<ii>"))
-B.kD=s([0,21,51,121,151,191,271,321,360],t.n)
+B.kD=s([B.NK,B.NP,B.NN,B.NO,B.NM,B.NL],A.ad("w<ii>"))
+B.kE=s([0,21,51,121,151,191,271,321,360],t.n)
 B.vh=new A.uI(0,"left")
 B.vi=new A.uI(1,"right")
 B.B5=s([B.vh,B.vi],A.ad("w<uI>"))
@@ -64327,7 +64339,7 @@ B.i1=new A.Dc(1,"page")
 B.i2=new A.e9(B.aE,B.i1)
 B.Bn=s([B.wD,B.i2],A.ad("w<az>"))
 B.Bu=s([],t.EQ)
-B.kG=s([],A.ad("w<asl>"))
+B.kH=s([],A.ad("w<asl>"))
 B.Bx=s([],t.gw)
 B.By=s([],t.yx)
 B.ei=s([],t.tl)
@@ -64341,21 +64353,9 @@ B.a5=s([],t.ve)
 B.Bw=s([],t.px)
 B.OK=s([],t.F)
 B.Br=s([],t.t)
-B.kF=s([],t.zz)
+B.kG=s([],t.zz)
 B.Bv=s([],t.yH)
 B.cT=s([B.bk,B.b7,B.dC,B.dD,B.ff],t.EQ)
-B.da={id:0,name:1,meter:2,steps:3,tip:4}
-B.Bk=s(["D","-","D","-","D","-","D","-"],t.s)
-B.DO=new A.aV(B.da,["steady","Steady downs",4,B.Bk,"One downstroke on each beat. Miss the strings on every \u201cand\u201d while your hand keeps moving."],t.V)
-B.BB=s(["D","U","D","U","D","U","D","U"],t.s)
-B.DP=new A.aV(B.da,["eighths","Down-up flow",4,B.BB,"Fill all eight slots. Upstrokes fall between the beats, not on the numbers."],t.V)
-B.Au=s(["D","-","D","U","-","U","D","U"],t.s)
-B.DN=new A.aV(B.da,["island","Island bounce",4,B.Au,"Skip the \u201cand\u201d after 1 and the downstroke on 3. Keep moving through both gaps. The upstroke after 3 gives the bounce."],t.V)
-B.Bh=s(["D","-","X","U","-","U","X","U"],t.s)
-B.DM=new A.aV(B.da,["chuck","Muted backbeat",4,B.Bh,"Replace the ringing strums on 2 and 4 with short, muted chucks. X makes a sound; a dash means miss the strings."],t.V)
-B.AG=s(["D","-","D","-","D","-"],t.s)
-B.DQ=new A.aV(B.da,["waltz","Three-beat sway",3,B.AG,"Count ONE-two-three. Give 1 a little more weight. Skip the strings on the \u201cands\u201d."],t.V)
-B.kH=s([B.DO,B.DP,B.DN,B.DM,B.DQ],t.rq)
 B.AJ=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
 B.Bo=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
 B.AT=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
@@ -64976,9 +64976,9 @@ B.hs=s(["Noto Sans TC"],t.s)
 B.Be=s(["Noto Sans HK","Noto Sans TC"],t.s)
 B.AD=s(["Noto Sans JP"],t.s)
 B.A7=s(["Noto Sans KR"],t.s)
-B.kE=s(["Noto Sans SC"],t.s)
+B.kF=s(["Noto Sans SC"],t.s)
 B.BV=s(["Noto Sans SC","Noto Sans TC"],t.s)
-B.es=new A.aV(B.Ej,[B.hs,B.hs,B.hs,B.Be,B.AD,B.A7,B.kE,B.kE,B.BV],t.mJ)
+B.es=new A.aV(B.Ej,[B.hs,B.hs,B.hs,B.Be,B.AD,B.A7,B.kF,B.kF,B.BV],t.mJ)
 B.Eg={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
 B.tD=new A.h(458907)
 B.tj=new A.h(458873)
